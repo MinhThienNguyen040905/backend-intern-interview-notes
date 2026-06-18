@@ -1,16 +1,16 @@
-# Big-O Complexity
+# Độ phức tạp Big-O
 
-## 1. Big-O la gi?
+## 1. Big-O là gì?
 
-Big-O la cach mo ta toc do tang truong cua thuat toan khi kich thuoc input `n` tang len.
+Big-O là cách mô tả tốc độ tăng trưởng của thuật toán khi kích thước input `n` tăng lên.
 
-Trong phong van, Big-O thuong dung de tra loi:
+Trong phỏng vấn, Big-O thường dùng để trả lời:
 
-- Thuat toan chay nhanh hay cham khi du lieu lon?
-- Dung bao nhieu bo nho phu?
-- Co cach nao toi uu hon khong?
+- Thuật toán chạy nhanh hay chậm khi dữ liệu lớn?
+- Thuật toán dùng bao nhiêu bộ nhớ phụ?
+- Có cách nào tối ưu hơn không?
 
-Vi du:
+Ví dụ:
 
 ```java
 for (int i = 0; i < n; i++) {
@@ -18,38 +18,38 @@ for (int i = 0; i < n; i++) {
 }
 ```
 
-Vong lap chay `n` lan, nen time complexity la `O(n)`.
+Vòng lặp chạy `n` lần, nên time complexity là `O(n)`.
 
 ## 2. Big-O, Big-Omega, Big-Theta
 
-| Ky hieu | Y nghia | Cach hieu nhanh |
+| Ký hiệu | Ý nghĩa | Cách hiểu nhanh |
 | --- | --- | --- |
-| `O(...)` | Upper bound | Toi te khong vuot qua muc nay |
-| `Omega(...)` | Lower bound | Tot nhat it nhat muc nay |
-| `Theta(...)` | Tight bound | Tang truong chinh xac ve mat bac |
+| `O(...)` | Upper bound | Trường hợp xấu không vượt quá mức này |
+| `Omega(...)` | Lower bound | Trường hợp tốt ít nhất đạt mức này |
+| `Theta(...)` | Tight bound | Tăng trưởng chính xác về mặt bậc |
 
-Trong phong van, khi noi "complexity la O(n)", thuong nguoi ta dang noi den upper bound hoac worst case.
+Trong phỏng vấn, khi nói "complexity là O(n)", thường người ta đang nói đến upper bound hoặc worst case.
 
-## 3. Thu tu do phuc tap pho bien
+## 3. Thứ tự độ phức tạp phổ biến
 
-Tu tot den xau hon:
+Từ tốt đến xấu hơn:
 
-| Complexity | Ten goi | Vi du |
+| Complexity | Tên gọi | Ví dụ |
 | --- | --- | --- |
-| `O(1)` | Constant | Truy cap `arr[i]`, push/pop stack |
+| `O(1)` | Constant | Truy cập `arr[i]`, push/pop stack |
 | `O(log n)` | Logarithmic | Binary search |
-| `O(n)` | Linear | Duyet mang mot lan |
+| `O(n)` | Linear | Duyệt mảng một lần |
 | `O(n log n)` | Linearithmic | Merge sort, heap sort |
-| `O(n^2)` | Quadratic | Hai vong lap long nhau |
-| `O(n^3)` | Cubic | Ba vong lap long nhau |
-| `O(2^n)` | Exponential | Thu tat ca subset |
-| `O(n!)` | Factorial | Thu tat ca hoan vi |
+| `O(n^2)` | Quadratic | Hai vòng lặp lồng nhau |
+| `O(n^3)` | Cubic | Ba vòng lặp lồng nhau |
+| `O(2^n)` | Exponential | Thử tất cả subset |
+| `O(n!)` | Factorial | Thử tất cả hoán vị |
 
-Quy tac nho: khi `n` lon, `O(n log n)` thuong con chap nhan duoc, `O(n^2)` can can nhac, `O(2^n)` va `O(n!)` chi dung duoc voi `n` rat nho.
+Quy tắc nhớ: khi `n` lớn, `O(n log n)` thường còn chấp nhận được, `O(n^2)` cần cân nhắc, `O(2^n)` và `O(n!)` chỉ dùng được với `n` rất nhỏ.
 
-## 4. Cac quy tac tinh Big-O
+## 4. Các quy tắc tính Big-O
 
-### Bo hang so
+### Bỏ hằng số
 
 ```java
 for (int i = 0; i < 2 * n; i++) {
@@ -57,9 +57,9 @@ for (int i = 0; i < 2 * n; i++) {
 }
 ```
 
-Chay `2n` lan nhung Big-O la `O(n)`, khong phai `O(2n)`.
+Chạy `2n` lần nhưng Big-O là `O(n)`, không phải `O(2n)`.
 
-### Bo thanh phan nho hon
+### Bỏ thành phần nhỏ hơn
 
 ```java
 for (int i = 0; i < n; i++) {
@@ -73,9 +73,9 @@ for (int i = 0; i < n; i++) {
 }
 ```
 
-Tong la `O(n + n^2)`, rut gon thanh `O(n^2)`.
+Tổng là `O(n + n^2)`, rút gọn thành `O(n^2)`.
 
-### Hai input khac nhau thi khong gop thanh mot bien
+### Hai input khác nhau thì không gộp thành một biến
 
 ```java
 for (int i = 0; i < a; i++) {
@@ -87,9 +87,9 @@ for (int j = 0; j < b; j++) {
 }
 ```
 
-Complexity la `O(a + b)`, khong nen viet thanh `O(n)`.
+Complexity là `O(a + b)`, không nên viết thành `O(n)`.
 
-Neu long nhau:
+Nếu lồng nhau:
 
 ```java
 for (int i = 0; i < a; i++) {
@@ -99,11 +99,11 @@ for (int i = 0; i < a; i++) {
 }
 ```
 
-Complexity la `O(a * b)`.
+Complexity là `O(a * b)`.
 
-## 5. Phan tich vong lap
+## 5. Phân tích vòng lặp
 
-### Mot vong lap
+### Một vòng lặp
 
 ```java
 for (int i = 0; i < n; i++) {
@@ -115,7 +115,7 @@ Time: `O(n)`
 
 Space: `O(1)`
 
-### Hai vong lap noi tiep
+### Hai vòng lặp nối tiếp
 
 ```java
 for (int i = 0; i < n; i++) {
@@ -129,7 +129,7 @@ for (int j = 0; j < n; j++) {
 
 Time: `O(n + n) = O(n)`
 
-### Hai vong lap long nhau
+### Hai vòng lặp lồng nhau
 
 ```java
 for (int i = 0; i < n; i++) {
@@ -141,7 +141,7 @@ for (int i = 0; i < n; i++) {
 
 Time: `O(n^2)`
 
-### Vong lap tang gap doi
+### Vòng lặp tăng gấp đôi
 
 ```java
 for (int i = 1; i < n; i *= 2) {
@@ -151,9 +151,9 @@ for (int i = 1; i < n; i *= 2) {
 
 Time: `O(log n)`
 
-Vi moi lan `i` gap doi: `1, 2, 4, 8, ...`
+Vì mỗi lần `i` gấp đôi: `1, 2, 4, 8, ...`
 
-### Vong lap giam mot nua
+### Vòng lặp giảm một nửa
 
 ```java
 while (n > 1) {
@@ -163,9 +163,9 @@ while (n > 1) {
 
 Time: `O(log n)`
 
-## 6. Phan tich de quy
+## 6. Phân tích đệ quy
 
-### De quy tuyen tinh
+### Đệ quy tuyến tính
 
 ```java
 int factorial(int n) {
@@ -174,7 +174,7 @@ int factorial(int n) {
 }
 ```
 
-Moi lan goi giam `n` di 1.
+Mỗi lần gọi giảm `n` đi 1.
 
 Time: `O(n)`
 
@@ -196,11 +196,11 @@ int binarySearch(int[] arr, int target, int left, int right) {
 }
 ```
 
-Moi lan loai bo mot nua input.
+Mỗi lần loại bỏ một nửa input.
 
 Time: `O(log n)`
 
-Space: `O(log n)` neu dung de quy, `O(1)` neu dung vong lap.
+Space: `O(log n)` nếu dùng đệ quy, `O(1)` nếu dùng vòng lặp.
 
 ### Fibonacci naive
 
@@ -211,25 +211,25 @@ int fib(int n) {
 }
 ```
 
-Moi call tach thanh 2 call con.
+Mỗi call tách thành 2 call con.
 
 Time: `O(2^n)`
 
-Space: `O(n)` do do sau call stack.
+Space: `O(n)` do độ sâu call stack.
 
-Neu dung memoization:
+Nếu dùng memoization:
 
 Time: `O(n)`
 
 Space: `O(n)`
 
-## 7. Time complexity va space complexity
+## 7. Time complexity và space complexity
 
 ### Time complexity
 
-Do so phep tinh tang nhu the nao theo input.
+Đo số phép tính tăng như thế nào theo input.
 
-Vi du:
+Ví dụ:
 
 ```java
 boolean containsDuplicate(int[] nums) {
@@ -244,31 +244,31 @@ boolean containsDuplicate(int[] nums) {
 }
 ```
 
-Time: `O(n)` vi duyet mang mot lan, thao tac `HashSet` trung binh `O(1)`.
+Time: `O(n)` vì duyệt mảng một lần, thao tác `HashSet` trung bình là `O(1)`.
 
 ### Space complexity
 
-Do bo nho phu tang nhu the nao theo input.
+Đo bộ nhớ phụ tăng như thế nào theo input.
 
-Trong vi du tren:
+Trong ví dụ trên:
 
-Space: `O(n)` vi `HashSet` co the luu toi da `n` phan tu.
+Space: `O(n)` vì `HashSet` có thể lưu tối đa `n` phần tử.
 
-## 8. Complexity cua data structure pho bien
+## 8. Complexity của data structure phổ biến
 
 | Data structure | Access | Search | Insert | Delete |
 | --- | --- | --- | --- | --- |
 | Array | `O(1)` | `O(n)` | `O(n)` | `O(n)` |
-| Linked List | `O(n)` | `O(n)` | `O(1)` neu da co node | `O(1)` neu da co node |
+| Linked List | `O(n)` | `O(n)` | `O(1)` nếu đã có node | `O(1)` nếu đã có node |
 | Stack | `O(n)` | `O(n)` | `O(1)` push | `O(1)` pop |
 | Queue | `O(n)` | `O(n)` | `O(1)` enqueue | `O(1)` dequeue |
-| HashMap | Khong ap dung | `O(1)` trung binh | `O(1)` trung binh | `O(1)` trung binh |
-| Binary Search Tree can bang | `O(log n)` | `O(log n)` | `O(log n)` | `O(log n)` |
+| HashMap | Không áp dụng | `O(1)` trung bình | `O(1)` trung bình | `O(1)` trung bình |
+| Binary Search Tree cân bằng | `O(log n)` | `O(log n)` | `O(log n)` | `O(log n)` |
 | Heap | `O(1)` peek min/max | `O(n)` | `O(log n)` | `O(log n)` poll |
 
-Luu y: `HashMap` worst case co the la `O(n)`, nhung trong phong van thuong lay average case la `O(1)` neu hash function tot.
+Lưu ý: `HashMap` worst case có thể là `O(n)`, nhưng trong phỏng vấn thường lấy average case là `O(1)` nếu hash function tốt.
 
-## 9. Complexity cua thuat toan sap xep
+## 9. Complexity của thuật toán sắp xếp
 
 | Algorithm | Best | Average | Worst | Space |
 | --- | --- | --- | --- | --- |
@@ -279,11 +279,11 @@ Luu y: `HashMap` worst case co the la `O(n)`, nhung trong phong van thuong lay a
 | Quick sort | `O(n log n)` | `O(n log n)` | `O(n^2)` | `O(log n)` average |
 | Heap sort | `O(n log n)` | `O(n log n)` | `O(n log n)` | `O(1)` |
 
-## 10. Mot so mau phan tich hay gap
+## 10. Một số mẫu phân tích hay gặp
 
 ### Two pointers
 
-Thuong la `O(n)` vi moi con tro chi di qua mang mot so lan huu han.
+Thường là `O(n)` vì mỗi con trỏ chỉ đi qua mảng một số lần hữu hạn.
 
 ```java
 int left = 0;
@@ -302,7 +302,7 @@ Space: `O(1)`
 
 ### Sliding window
 
-Thuong la `O(n)` vi moi phan tu vao window mot lan va ra window mot lan.
+Thường là `O(n)` vì mỗi phần tử vào window một lần và ra window một lần.
 
 ```java
 int left = 0;
@@ -318,69 +318,69 @@ for (int right = 0; right < nums.length; right++) {
 }
 ```
 
-Time: `O(n)`, khong phai `O(n^2)`, vi `left` va `right` moi con tro chi tien toi.
+Time: `O(n)`, không phải `O(n^2)`, vì `left` và `right` mỗi con trỏ chỉ tiến tới.
 
-### BFS / DFS tren graph
+### BFS / DFS trên graph
 
-Voi adjacency list:
+Với adjacency list:
 
 Time: `O(V + E)`
 
 Space: `O(V)`
 
-Trong do:
+Trong đó:
 
-- `V` la so dinh.
-- `E` la so canh.
+- `V` là số đỉnh.
+- `E` là số cạnh.
 
 ### Dynamic programming
 
-Complexity thuong bang:
+Complexity thường bằng:
 
 ```text
-so_luong_state * chi_phi_tinh_moi_state
+số_lượng_state * chi_phí_tính_mỗi_state
 ```
 
-Vi du `dp[i]` voi `i = 0..n` va moi state tinh `O(1)`:
+Ví dụ `dp[i]` với `i = 0..n` và mỗi state tính `O(1)`:
 
 Time: `O(n)`
 
-Space: `O(n)` hoac `O(1)` neu toi uu rolling variables.
+Space: `O(n)` hoặc `O(1)` nếu tối ưu rolling variables.
 
-## 11. Cach tra loi trong phong van
+## 11. Cách trả lời trong phỏng vấn
 
-Khi duoc hoi complexity, co the tra loi theo format:
-
-```text
-Time complexity la O(...), vi ...
-Space complexity la O(...), vi ...
-```
-
-Vi du:
+Khi được hỏi complexity, có thể trả lời theo format:
 
 ```text
-Time complexity la O(n), vi ta duyet qua mang mot lan va moi thao tac HashSet trung binh la O(1).
-Space complexity la O(n), vi trong worst case ta luu tat ca phan tu vao HashSet.
+Time complexity là O(...), vì ...
+Space complexity là O(...), vì ...
 ```
 
-## 12. Cac loi thuong gap
+Ví dụ:
 
-- Noi `O(2n)` thay vi rut gon thanh `O(n)`.
-- Gop hai input khac nhau thanh `O(n)` thay vi `O(a + b)` hoac `O(a * b)`.
-- Thay nested loop la ket luan ngay `O(n^2)`, trong khi two pointers/sliding window co the van la `O(n)`.
-- Quen tinh space complexity cua recursion call stack.
-- Quen phan biet average case va worst case cua `HashMap`, `QuickSort`.
-- Chi noi Big-O ma khong giai thich vi sao.
+```text
+Time complexity là O(n), vì ta duyệt qua mảng một lần và mỗi thao tác HashSet trung bình là O(1).
+Space complexity là O(n), vì trong worst case ta lưu tất cả phần tử vào HashSet.
+```
+
+## 12. Các lỗi thường gặp
+
+- Nói `O(2n)` thay vì rút gọn thành `O(n)`.
+- Gộp hai input khác nhau thành `O(n)` thay vì `O(a + b)` hoặc `O(a * b)`.
+- Thấy nested loop là kết luận ngay `O(n^2)`, trong khi two pointers/sliding window có thể vẫn là `O(n)`.
+- Quên tính space complexity của recursion call stack.
+- Quên phân biệt average case và worst case của `HashMap`, `QuickSort`.
+- Chỉ nói Big-O mà không giải thích vì sao.
 
 ## 13. Checklist nhanh
 
-Truoc khi chot dap an, hay tu hoi:
+Trước khi chốt đáp án, hãy tự hỏi:
 
-- Input size la gi? `n`, `m`, `V`, `E`?
-- Co bao nhieu vong lap? Noi tiep hay long nhau?
-- Vong lap tang/giam theo cong thuc nao? `+1`, `*2`, `/2`?
-- Co de quy khong? Moi call sinh bao nhieu call con?
-- Co dung bo nho phu khong? Array, HashMap, Set, Queue, Stack?
-- Co call stack do de quy khong?
-- Dang noi best, average hay worst case?
+- Input size là gì? `n`, `m`, `V`, `E`?
+- Có bao nhiêu vòng lặp? Nối tiếp hay lồng nhau?
+- Vòng lặp tăng/giảm theo công thức nào? `+1`, `*2`, `/2`?
+- Có đệ quy không? Mỗi call sinh bao nhiêu call con?
+- Có dùng bộ nhớ phụ không? Array, HashMap, Set, Queue, Stack?
+- Có call stack do đệ quy không?
+- Đang nói best, average hay worst case?
 
