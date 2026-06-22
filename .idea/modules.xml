@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Desgin Pattern/Behavioral-ChainOfResponsibility/Behavioral-ChainOfResponsibility.iml" filepath="$PROJECT_DIR$/Desgin Pattern/Behavioral-ChainOfResponsibility/Behavioral-ChainOfResponsibility.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Desgin Pattern/Behavioral-Command/Behavioral-Command.iml" filepath="$PROJECT_DIR$/Desgin Pattern/Behavioral-Command/Behavioral-Command.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Desgin Pattern/Behavioral-Interpreter/Behavioral-Interpreter.iml" filepath="$PROJECT_DIR$/Desgin Pattern/Behavioral-Interpreter/Behavioral-Interpreter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Desgin Pattern/Behavioral-Iterator/Behavioral-Iterator.iml" filepath="$PROJECT_DIR$/Desgin Pattern/Behavioral-Iterator/Behavioral-Iterator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Desgin Pattern/Behavioral-Mediator/Behavioral-Mediator.iml" filepath="$PROJECT_DIR$/Desgin Pattern/Behavioral-Mediator/Behavioral-Mediator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Desgin Pattern/Behavioral-Memento/Behavioral-Memento.iml" filepath="$PROJECT_DIR$/Desgin Pattern/Behavioral-Memento/Behavioral-Memento.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Desgin Pattern/Behavioral-Observer/Behavioral-Observer.iml" filepath="$PROJECT_DIR$/Desgin Pattern/Behavioral-Observer/Behavioral-Observer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Desgin Pattern/Behavioral-State/Behavioral-State.iml" filepath="$PROJECT_DIR$/Desgin Pattern/Behavioral-State/Behavioral-State.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Desgin Pattern/Behavioral-Strategy/Behavioral-Strategy.iml" filepath="$PROJECT_DIR$/Desgin Pattern/Behavioral-Strategy/Behavioral-Strategy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Desgin Pattern/Behavioral-TemplateMethod/Behavioral-TemplateMethod.iml" filepath="$PROJECT_DIR$/Desgin Pattern/Behavioral-TemplateMethod/Behavioral-TemplateMethod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Desgin Pattern/Behavioral-Visitor/Behavioral-Visitor.iml" filepath="$PROJECT_DIR$/Desgin Pattern/Behavioral-Visitor/Behavioral-Visitor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Desgin Pattern/Creational-AbstractFactory/Creational-AbstractFactory.iml" filepath="$PROJECT_DIR$/Desgin Pattern/Creational-AbstractFactory/Creational-AbstractFactory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Desgin Pattern/Creational-Builder/Creational-Builder.iml" filepath="$PROJECT_DIR$/Desgin Pattern/Creational-Builder/Creational-Builder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Desgin Pattern/Creational-FactoryMethod/Creational-FactoryMethod.iml" filepath="$PROJECT_DIR$/Desgin Pattern/Creational-FactoryMethod/Creational-FactoryMethod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Desgin Pattern/Creational-Prototype/Creational-Prototype.iml" filepath="$PROJECT_DIR$/Desgin Pattern/Creational-Prototype/Creational-Prototype.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Desgin Pattern/Creational-Singleton/Creational-Singleton.iml" filepath="$PROJECT_DIR$/Desgin Pattern/Creational-Singleton/Creational-Singleton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Kiến thức phỏng vấn.iml" filepath="$PROJECT_DIR$/.idea/Kiến thức phỏng vấn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Desgin Pattern/Structural-Adapter/Structural-Adapter.iml" filepath="$PROJECT_DIR$/Desgin Pattern/Structural-Adapter/Structural-Adapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Desgin Pattern/Structural-Bridge/Structural-Bridge.iml" filepath="$PROJECT_DIR$/Desgin Pattern/Structural-Bridge/Structural-Bridge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Desgin Pattern/Structural-Composite/Structural-Composite.iml" filepath="$PROJECT_DIR$/Desgin Pattern/Structural-Composite/Structural-Composite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Desgin Pattern/Structural-Decorator/Structural-Decorator.iml" filepath="$PROJECT_DIR$/Desgin Pattern/Structural-Decorator/Structural-Decorator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Desgin Pattern/Structural-Facade/Structural-Facade.iml" filepath="$PROJECT_DIR$/Desgin Pattern/Structural-Facade/Structural-Facade.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Desgin Pattern/Structural-Flyweight/Structural-Flyweight.iml" filepath="$PROJECT_DIR$/Desgin Pattern/Structural-Flyweight/Structural-Flyweight.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Desgin Pattern/Structural-Proxy/Structural-Proxy.iml" filepath="$PROJECT_DIR$/Desgin Pattern/Structural-Proxy/Structural-Proxy.iml" />
+    </modules>
+  </component>
+</project>
